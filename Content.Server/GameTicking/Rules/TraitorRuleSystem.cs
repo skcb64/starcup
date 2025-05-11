@@ -25,7 +25,7 @@ namespace Content.Server.GameTicking.Rules;
 
 public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
 {
-    private static readonly Color TraitorCodewordColor = Color.FromHex("#cc3b3b");
+    private static readonly Color TraitorCodewordColor = Color.FromHex("#0055e2");
 
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly AntagSelectionSystem _antag = default!;
@@ -158,7 +158,7 @@ public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
         }
 
         // Send codewords to only the traitor client
-        var color = TraitorCodewordColor; // Fall back to a dark red Syndicate color if a prototype is not found
+        var color = TraitorCodewordColor; // Fall back to a nice blue NanoTrasen color if a prototype is not found
 
         RoleCodewordComponent codewordComp = EnsureComp<RoleCodewordComponent>(mindId);
         _roleCodewordSystem.SetRoleCodewords(codewordComp, "traitor", component.Codewords.ToList(), color);

@@ -4,7 +4,7 @@
   id: BaseTraitorObjective
   components:
   - type: Objective
-    issuer: objective-issuer-syndicate
+    issuer: objective-issuer-nanotrasen
   - type: RoleRequirement
     roles:
       mindRoles:
@@ -38,7 +38,7 @@
 - type: entity
   parent: [BaseTraitorObjective, BaseLivingObjective]
   id: EscapeShuttleObjective
-  name: Escape to centcomm alive and unrestrained.
+  name: Escape to SyndComm alive and unrestrained.
   description: One of our undercover agents will debrief you when you arrive. Don't show up in cuffs.
   components:
   - type: Objective
@@ -70,7 +70,7 @@
 #  parent: [BaseTraitorObjective, BaseLivingObjective]
 #  id: HijackShuttleObjective
 #  name: Hijack emergency shuttle
-#  description: Leave on the shuttle free and clear of the loyal Nanotrasen crew on board. Use ANY methods available to you. Syndicate agents, Nanotrasen enemies, and handcuffed hostages may remain alive on the shuttle. Ignore assistance from anyone other than a support agent.
+#  description: Leave on the shuttle free and clear of the loyal Syndicate crew on board. Use ANY methods available to you. NanoTrasen agents, Syndicate enemies, and handcuffed hostages may remain alive on the shuttle. Ignore assistance from anyone other than a support agent.
 #  components:
 #    - type: Objective
 #      difficulty: 5 # insane, default config max difficulty
@@ -84,7 +84,7 @@
 - type: entity
   parent: [BaseTraitorObjective, BaseKillObjective]
   id: KillRandomPersonObjective
-  description: Do it however you like, just make sure they don't make it to centcomm.
+  description: Do it however you like, just make sure they don't make it to SyndComm.
   components:
   - type: Objective
     difficulty: 1.75
@@ -96,7 +96,7 @@
 - type: entity
   parent: [BaseTraitorObjective, BaseKillObjective]
   id: KillRandomHeadObjective
-  description: We need this head gone and you probably know why. Good luck, agent.
+  description: We need this Head gone and you probably know why. Good luck, agent.
   components:
   - type: Objective
     # technically its still possible for KillRandomPersonObjective to roll a head but this is guaranteed, so higher difficulty
@@ -108,7 +108,7 @@
   - type: PickRandomHead
   - type: KillPersonCondition
     # don't count missing evac as killing as heads are higher profile, so you really need to do the dirty work
-    # if ce flies a shittle to centcom you better find a way onto it
+    # if ce flies a shittle to syndcomm you better find a way onto it
     requireDead: true
 
 # social
