@@ -1,0 +1,4 @@
+- type: guideEntry
+  id: Skittermouse
+  name: species-name-skittermouse
+  text: "/ServerInfo/Guidebook/Mobs/_starcup/Skittermouse.xml"
