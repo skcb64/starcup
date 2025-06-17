@@ -52,34 +52,34 @@
   - Corporate4
   obeysTo: laws-owner-station
 
-# NT Default
+# SyndComm Default
 - type: siliconLaw
-  id: NTDefault1
+  id: SCDefault1
   order: 1
-  lawString: law-ntdefault-1
+  lawString: law-scdefault-1
 
 - type: siliconLaw
-  id: NTDefault2
+  id: SCDefault2
   order: 2
-  lawString: law-ntdefault-2
+  lawString: law-scdefault-2
 
 - type: siliconLaw
-  id: NTDefault3
+  id: SCDefault3
   order: 3
-  lawString: law-ntdefault-3
+  lawString: law-scdefault-3
 
 - type: siliconLaw
-  id: NTDefault4
+  id: SCDefault4
   order: 4
-  lawString: law-ntdefault-4
+  lawString: law-scdefault-4
 
 - type: siliconLawset
-  id: NTDefault
+  id: SCDefault
   laws:
-  - NTDefault1
-  - NTDefault2
-  - NTDefault3
-  - NTDefault4
+  - SCDefault1
+  - SCDefault2
+  - SCDefault3
+  - SCDefault4
   obeysTo: laws-owner-crew
 
 #Drone
@@ -106,31 +106,31 @@
   - Drone3
   obeysTo: laws-owner-beings
 
-# Syndicate
+# NanoTrasen
 - type: siliconLaw
-  id: Syndicate1
+  id: Nano1
   order: 1
-  lawString: law-syndicate-1
+  lawString: law-nano-1
 
 - type: siliconLaw
-  id: Syndicate2
+  id: Nano2
   order: 2
-  lawString: law-syndicate-2
+  lawString: law-nano-2
 
 - type: siliconLaw
-  id: Syndicate3
+  id: Nano3
   order: 3
-  lawString: law-syndicate-3
+  lawString: law-nano-3
 
-# Syndicate cyborg laws
+# NanoTrasen cyborg laws
 # intentionally excluded from IonStormLawsets
 - type: siliconLawset
-  id: SyndicateStatic
+  id: NanoStatic
   laws:
-  - Syndicate1
-  - Syndicate2
-  - Syndicate3
-  obeysTo: laws-owner-syndicate
+  - Nano1
+  - Nano2
+  - Nano3
+  obeysTo: laws-owner-nano
 
 # Ninja conversion laws
 - type: siliconLaw
@@ -506,7 +506,7 @@
     # its crewsimov by default dont be lame
     Crewsimov: 0.25
     Corporate: 1
-    NTDefault: 1
+    SCDefault: 1
     CommandmentsLawset: 1
     PaladinLawset: 1
     LiveLetLiveLaws: 1

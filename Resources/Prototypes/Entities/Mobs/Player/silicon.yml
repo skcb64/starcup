@@ -150,14 +150,14 @@
 - type: entity
   id: NTDefaultCircuitBoard
   parent: BaseElectronics
-  name: law board (NT Default)
-  description: An electronics board containing the NT Default lawset.
+  name: law board (SC Default)
+  description: An electronics board containing the SyndComm Default lawset.
   components:
   - type: Sprite
     sprite: Objects/Misc/module.rsi
     state: std_mod
   - type: SiliconLawProvider
-    laws: NTDefault
+    laws: SCDefault
 
 - type: entity
   id: CommandmentCircuitBoard

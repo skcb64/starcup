@@ -86,7 +86,6 @@ ghost-role-information-kobold-name = Kobold
 ghost-role-information-kobold-description = Be the little gremlin you are, yell at people and beg for meat!
 
 ghost-role-information-rat-king-name = Rat King
-
 ghost-role-information-rat-king-description = You are the Rat King, your interests are food, food, and more food. Cooperate with or fight against the station for food. Did I say food interests you?
 
 ghost-role-information-rat-servant-name = Rat Servant
@@ -177,16 +176,16 @@ ghost-role-information-ert-medical-name = ERT Medical
 ghost-role-information-ert-medical-description = Assist with medical efforts to resolve the station's issues.
 
 ghost-role-information-cburn-agent-name = CBURN Agent
-ghost-role-information-cburn-agent-description = A highly trained CentComm agent, capable of dealing with various threats.
+ghost-role-information-cburn-agent-description = A highly trained SyndComm agent, capable of dealing with various threats.
 
-ghost-role-information-centcom-official-name = CentComm Official
-ghost-role-information-centcom-official-description = Perform CentComm related duties such as inspect the station, jotting down performance reviews for heads of staff, and managing the fax machine.
+ghost-role-information-centcom-official-name = SyndComm Official
+ghost-role-information-centcom-official-description = Perform SyndComm related duties such as inspect the station, jotting down performance reviews for heads of staff, and managing the fax machine.
 
-ghost-role-information-nukeop-rules = You are a [color=red][bold]Team Antagonist[/bold][/color] with all other nuclear operatives. Covert syndicate agents are not guaranteed to help you.
+ghost-role-information-nukeop-rules = You are a [color=red][bold]Team Antagonist[/bold][/color] with all other nuclear operatives. Covert NT agents are not guaranteed to help you.
 
 ghost-role-information-loneop-name = Lone Operative
 ghost-role-information-loneop-description = You are a lone nuclear operative. Destroy the station!
-ghost-role-information-loneop-rules = You are a [color=red][bold]Solo Antagonist[/bold][/color]. Covert syndicate agents are not guaranteed to help you.
+ghost-role-information-loneop-rules = You are a [color=red][bold]Solo Antagonist[/bold][/color]. Covert NT agents are not guaranteed to help you.
 
 ghost-role-information-behonker-name = Behonker
 ghost-role-information-behonker-description = You are an antagonist, bring death and honks to those who do not follow the honkmother.
@@ -195,10 +194,10 @@ ghost-role-information-hellspawn-name = Hellspawn
 ghost-role-information-hellspawn-description = Bring death to those who do not follow the great god Nar'Sie.
 
 ghost-role-information-Death-Squad-name = Death Squad Operative
-ghost-role-information-Death-Squad-description = One of Nanotrasen's top internal affairs agents. Await orders from CentComm or an official.
+ghost-role-information-Death-Squad-description = One of the Syndicate's top internal affairs agents. Await orders from SyndComm or an official.
 ghost-role-information-Death-Squad-rules = You are required to obey orders given by your superior, you are effectively their [color=#6495ed][bold]Familiar[/bold][/color].
 
-ghost-role-information-SyndiCat-name = SyndiCat
+ghost-role-information-SyndiCat-name = NanoCat
 ghost-role-information-SyndiCat-description = You're the faithful trained pet of nuclear operatives with a microbomb. Serve your master to the death!
 ghost-role-information-SyndiCat-rules = You are a [color=red][bold]Team Antagonist[/bold][/color] with the agent who summoned you.
 
@@ -208,38 +207,38 @@ ghost-role-information-Cak-description = You are the chef's favorite child. You'
 ghost-role-information-BreadDog-name = BreadDog
 ghost-role-information-BreadDog-description = You are the chef's favorite child. You're a living bread dog.
 
-ghost-role-information-space-ninja-name = Space Ninja
+ghost-role-information-space-ninja-name = Renegade
 ghost-role-information-space-ninja-description = Use stealth and deception to sabotage the station.
 
 ghost-role-information-paradox-clone-name = Paradox Clone
 ghost-role-information-paradox-clone-description = A freak space-time anomaly has teleported you into another reality! Now you have to find your counterpart and kill and replace them.
 
-ghost-role-information-syndicate-reinforcement-name = Syndicate Agent
-ghost-role-information-syndicate-reinforcement-description = Someone needs reinforcements. You, the first person the syndicate could find, will help them.
+ghost-role-information-syndicate-reinforcement-name = NT Agent
+ghost-role-information-syndicate-reinforcement-description = Someone needs reinforcements. You, the first person NanoTrasen could find, will help them.
 ghost-role-information-syndicate-reinforcement-rules = You are a [color=red][bold]Team Antagonist[/bold][/color] with the agent who summoned you.
 
-ghost-role-information-syndicate-reinforcement-medic-name = Syndicate Medic
+ghost-role-information-syndicate-reinforcement-medic-name = NT Medic
 ghost-role-information-syndicate-reinforcement-medic-description = Someone needs reinforcements. Your task is to keep the agent who called you alive.
 
-ghost-role-information-syndicate-reinforcement-spy-name = Syndicate Spy
+ghost-role-information-syndicate-reinforcement-spy-name = NT Spy
 ghost-role-information-syndicate-reinforcement-spy-description = Someone needs reinforcements. Your speciality lies in espionage, do not be discovered.
 
-ghost-role-information-syndicate-reinforcement-thief-name = Syndicate Thief
+ghost-role-information-syndicate-reinforcement-thief-name = NT Thief
 ghost-role-information-syndicate-reinforcement-thief-description = Someone needs reinforcements. Your job is to break in and retrieve something valuable for your agent.
 
 ghost-role-information-nukeop-reinforcement-name = Nuclear Operative
 ghost-role-information-nukeop-reinforcement-description = The nuclear operatives need reinforcements. You, a reserve agent, will help them.
 ghost-role-information-nukeop-reinforcement-rules = You are a [color=red][bold]Team Antagonist[/bold][/color] with the nuclear operatives who summoned you.
 
-ghost-role-information-syndicate-monkey-reinforcement-name = Syndicate Monkey Agent
+ghost-role-information-syndicate-monkey-reinforcement-name = NT Monkey Agent
 ghost-role-information-syndicate-monkey-reinforcement-description = Someone needs reinforcements. You, a trained monkey, will help them.
 
-ghost-role-information-syndicate-kobold-reinforcement-name = Syndicate Kobold Agent
+ghost-role-information-syndicate-kobold-reinforcement-name = NT Kobold Agent
 ghost-role-information-syndicate-kobold-reinforcement-description = Someone needs reinforcements. You, a trained kobold, will help them.
 
-ghost-role-information-syndicate-cyborg-assault-name = Syndicate Assault Cyborg
-ghost-role-information-syndicate-cyborg-saboteur-name = Syndicate Saboteur Cyborg
-ghost-role-information-syndicate-cyborg-description = The Syndicate needs reinforcements. You, a cold silicon killing machine, will help them.
+ghost-role-information-syndicate-cyborg-assault-name = NT Assault Cyborg
+ghost-role-information-syndicate-cyborg-saboteur-name = NT Saboteur Cyborg
+ghost-role-information-syndicate-cyborg-description = NanoTrasen needs reinforcements. You, a cold silicon killing machine, will help them.
 
 ghost-role-information-derelict-cyborg-name = Derelict Cyborg
 ghost-role-information-derelict-cyborg-description = You are a regular cyborg that got lost in space. After years of exposure to ion storms you find yourself near a space station.
@@ -264,8 +263,8 @@ ghost-role-information-science-description = You are part of a science team, but
 
 ghost-role-information-civilian-name = Civilian
 ghost-role-information-civilian-description = You were just hanging out, but seem to have found yourself in a strange situation...
-ghost-role-information-civilian-centcom-lawyer-name = Centcom Lawyer
-ghost-role-information-civilian-centcom-lawyer-description = A lawyer direct from the Central Legal Division.
+ghost-role-information-civilian-centcom-lawyer-name = SyndComm Lawyer
+ghost-role-information-civilian-centcom-lawyer-description = A lawyer direct from the Syndicate Legal Division.
 
 ghost-role-information-command-name = Commander
 ghost-role-information-command-description = You are a member of command, but seem to have found yourself in a strange situation...
@@ -287,14 +286,14 @@ ghost-role-information-lost-challenge-cargo-technican-rules = You are not hostil
 ghost-role-information-disaster-victim-name = Disaster Victim
 ghost-role-information-disaster-victim-description = You were rescued in an escape pod from another station that suffered a terrible fate. Perhaps you will be found and rescued.
 
-ghost-role-information-syndie-disaster-victim-name = Syndicate Disaster Victim
-ghost-role-information-syndie-disaster-victim-description = You're a regular passenger from a syndicate station. Unfortunately, an evacuation pod has thrown you into an enemy sector...
+ghost-role-information-syndie-disaster-victim-name = NanoTrasen Disaster Victim
+ghost-role-information-syndie-disaster-victim-description = You're a regular passenger from a NanoTrasen station. Unfortunately, an evacuation pod has thrown you into an enemy sector...
 
-ghost-role-information-syndie-soldier-name = Syndicate Soldier
-ghost-role-information-syndie-soldier-description = You are a soldier from the Syndicate.
+ghost-role-information-syndie-soldier-name = NT Soldier
+ghost-role-information-syndie-soldier-description = You are a soldier from NanoTrasen.
 
-ghost-role-information-syndie-soldier-teamlead-name = Syndicate Team Leader
-ghost-role-information-syndie-soldier-teamlead-description = You are the fire team leader for a Syndicate operative taskforce.
+ghost-role-information-syndie-soldier-teamlead-name = NT Team Leader
+ghost-role-information-syndie-soldier-teamlead-description = You are the fire team leader for a NanoTrasen operative taskforce.
 
 ghost-role-information-blackmarketeer-name = Black Market Trader
 ghost-role-information-blackmarketeer-description = Make trades or take odd jobs to collect the most interesting items by the end of the shift.
