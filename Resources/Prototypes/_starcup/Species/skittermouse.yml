@@ -7,12 +7,13 @@
   markingLimits: MobSkittermouseMarkingLimits
   dollPrototype: MobSkittermouseDummy
   skinColoration: Hues
-  maleFirstNames: NamesSkittermouse
-  femaleFirstNames: NamesSkittermouse
-  naming: First
+  maleFirstNames: NamesSkittermouseFirst
+  femaleFirstNames: NamesSkittermouseFirst
+  lastNames: NamesSkittermouseLast
+  naming: FirstCodeLast
   sexes:
   - Unsexed
-  baseScale: "0.5, 0.5" # starcup: height adjustments
+  baseScale: "0.5, 0.5"
 
 - type: speciesBaseSprites
   id: MobSkittermouseSprites
