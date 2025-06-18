@@ -44,6 +44,7 @@
 #  - type: Ambiped
 #  - type: Darkvision
 #  - type: Latch
+#  - type: TinyGrabbers
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
