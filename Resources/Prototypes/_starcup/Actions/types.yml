@@ -7,4 +7,4 @@
     itemIconStyle: BigAction
     priority: -10
     icon: _starcup/Interface/Actions/skitter.png
-    event: !type:ToggleRunningLikeAFreakStateEvent
+#    event: !type:ToggleRunningLikeAFreakStateEvent

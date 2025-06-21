@@ -7,7 +7,7 @@
   - type: Thirst
   - type: Icon
     sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
-    state: skittermouse
+    state: full
   - type: Body
     prototype: Skittermouse
     requiredLegs: 2
@@ -29,11 +29,11 @@
     storedOffset: -10,0
     shape:
     - 0, 0, 3, 1
-  - type: Vocal
-    sounds:
-      Male: SoundsSkittermouse
-      Female: SoundsSkittermouse
-      Unsexed: SoundsSkittermouse
+#  - type: Vocal
+#    sounds:
+#      Male: SoundsSkittermouse
+#      Female: SoundsSkittermouse
+#      Unsexed: SoundsSkittermouse
   - type: Damageable
     damageModifierSet: Skittermouse
   - type: Butcherable
@@ -76,53 +76,53 @@
     rightBarePrint: "footprint-right-bare-slime"
   - type: Inventory
     speciesId: skittermouse
-    displacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-            state: jumpsuit
-      eyes:
-        sizeMaps:
-          32:
-            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-            state: eyes
-      gloves:
-        sizeMaps:
-          32:
-            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-            state: hand
-      head:
-        sizeMaps:
-          32:
-            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-            state: head
-      back:
-        sizeMaps:
-          32:
-            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-            state: back
-      ears:
-        sizeMaps:
-          32:
-            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-            state: ears
-      shoes:
-        sizeMaps:
-          32:
-            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-            state: shoes
-  - type: Hands
-    leftHandDisplacement:
-      sizeMaps:
-        32:
-          sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-          state: hand_l
-    rightHandDisplacement:
-      sizeMaps:
-        32:
-          sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-          state: hand_r
+#    displacements:
+#      jumpsuit:
+#        sizeMaps:
+#          32:
+#            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+#            state: jumpsuit
+#      eyes:
+#        sizeMaps:
+#          32:
+#            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+#            state: eyes
+#      gloves:
+#        sizeMaps:
+#          32:
+#            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+#            state: hand
+#      head:
+#        sizeMaps:
+#          32:
+#            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+#            state: head
+#      back:
+#        sizeMaps:
+#          32:
+#            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+#            state: back
+#      ears:
+#        sizeMaps:
+#          32:
+#            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+#            state: ears
+#      shoes:
+#       sizeMaps:
+#         32:
+#           sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+#           state: shoes
+# - type: Hands
+#    leftHandDisplacement:
+#      sizeMaps:
+#        32:
+#          sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+#          state: hand_l
+#    rightHandDisplacement:
+#      sizeMaps:
+#        32:
+#          sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+#          state: hand_r
   - type: Sprite
     scale: 0.5, 0.5
     layers:
@@ -164,7 +164,14 @@
       sprite: Objects/Misc/handcuffs.rsi
       state: body-overlay-2
       visible: false
-    - map: [ "clownedon" ]
-      sprite: "_starcup/Effects/creampie.rsi"
-      state: "creampie_skittermouse" # Not default
-      visible: false
+#    - map: [ "clownedon" ]
+#      sprite: "_starcup/Effects/creampie.rsi"
+#      state: "creampie_skittermouse" # Not default
+#      visible: false
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobSkittermouseDummy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory

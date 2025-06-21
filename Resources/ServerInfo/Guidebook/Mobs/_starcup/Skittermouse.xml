@@ -2,31 +2,18 @@
   # Skittermice
 
   <Box>
-    <GuideEntityEmbed Entity="MobSkittermouse" Caption=""/>
+    <GuideEntityEmbed Entity="MobSkittermouse" Caption="Skittermouse"/>
   </Box>
 
-  They are very small and light (half the size and a third the density of a human).
-  They are carnivorous and can't process Theobromine and Allicin.
-  Their light size allows them to be carried in bags as if they were Large Items.
-  Their unarmed attack deals Piercing damage.
+  - (~) They are very small and light (half the size and a third the density of a human).
+  - (~) They are carnivorous and can't process Theobromine and Allicin.
+  - (~) Their light size allows them to be carried in bags as if they were Large Items.
+  - (~) Their unarmed attack deals Piercing damage.
 
-  + When they grab onto another creature in Combat Mode, they latch onto them, being carried by the target and slowing them down. While latched onto a creature, their melee attacks deal 20% more damage.
-  + Their Walk Speed is increased, but they can't Sprint. Instead, they gain the ability to Scurry, which drops everything in their hands but gives them a massive speed boost.
-  + They can see in the dark.
+  - (+) When they grab onto another creature in Combat Mode, they latch onto them, being carried by the target and slowing them down. While latched onto a creature, their melee attacks deal 20% more damage.
+  - (+) Their Walk Speed is increased, but they can't Sprint. Instead, they gain the ability to Scurry, which drops everything in their hands but gives them a massive speed boost.
+  - (+) They can see in the dark.
 
-  - They take 15% more Physical (Blunt/Pierce/Slash) damage.
-  - Their small hands are unable to use items that require wielding in two hands, and they have to wield certain one-handed items in two hands to use them.
-
-  ## Sericulture
-
-  <Box>
-    <GuideEntityEmbed Entity="MaterialWebSilk" Caption=""/>
-    <GuideEntityEmbed Entity="ClothingUniformJumpskirtWeb" Caption=""/>
-    <GuideEntityEmbed Entity="WebShield" Caption=""/>
-    <GuideEntityEmbed Entity="WallWeb" Caption=""/>
-  </Box>
-
-  Arachnids can create Websilk at the cost of getting more hungry. They (and only they) can craft bundles of websilk into various items from clothing and shields to entire walls.
-
-
+  - (-) They take 15% more Physical (Blunt/Pierce/Slash) damage.
+  - (-) Their small hands are unable to use items that require wielding in two hands, and they have to wield certain one-handed items in two hands to use them.
 </Document>

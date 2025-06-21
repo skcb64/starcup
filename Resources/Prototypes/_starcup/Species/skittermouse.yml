@@ -10,7 +10,8 @@
   maleFirstNames: NamesSkittermouseFirst
   femaleFirstNames: NamesSkittermouseFirst
   lastNames: NamesSkittermouseLast
-  naming: FirstCodeLast
+#  naming: FirstCodeLast
+  naming: FirstLast
   sexes:
   - Unsexed
   baseScale: "0.5, 0.5"
@@ -26,7 +27,8 @@
     UndergarmentTop: MobHumanoidAnyMarking
     UndergarmentBottom: MobHumanoidAnyMarking
     Chest: MobSkittermouseTorso
-    Eyes: MobSkittermouseEyes
+#    Eyes: MobSkittermouseEyes
+    Eyes: MobHumanoidEyes
     LArm: MobSkittermouseLArm
     RArm: MobSkittermouseRArm
     LHand: MobSkittermouseLHand
@@ -54,15 +56,13 @@
     HeadTop:
       points: 1
       required: true
-      defaultMarkings: [ SkittermouseEarsDefault ]
+      defaultMarkings: [ SkittermouseEarsCat ]
     Snout:
       points: 1
-      required: true
-      defaultMarkings: [ SkittermouseSnoutDefault ]
+      required: false
     Chest:
       points: 1
-      required: true
-      defaultMarkings: [ SkittermouseChestDefault ]
+      required: false
     Legs:
       points: 2
       required: false
