@@ -14,3 +14,12 @@
   components:
   - type: Sprite
     state: poster-ppe-pink1
+
+# rebrands
+- type: entity
+  parent: PosterLegitHereForYourSafety
+  id: PosterLegitHereForYourSafetySyndie
+  components:
+  - type: Sprite
+    sprite: _starcup/Structures/Wallmounts/posters_rebrand.rsi
+    state: poster1_legit
