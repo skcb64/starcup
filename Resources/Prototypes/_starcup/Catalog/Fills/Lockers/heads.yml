@@ -8,7 +8,7 @@
       prob: 0.25
     - id: ClothingBeltSheathFilled
     - id: ClothingHeadsetAltCommandSyndie # starcup: command recolors
-    - id: ClothingOuterArmorCaptainCarapace # starcup: command recolors
+    - id: ClothingOuterArmorCaptainCarapaceSyndie # starcup: command recolors
     - id: CommsComputerCircuitboard
     - id: DoorRemoteCustom
     - id: MedalCase

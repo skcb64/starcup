@@ -5,4 +5,4 @@
   suffix: Syndicate
   components:
   - type: Sprite
-    sprite: Clothing/Back/Satchels/captain_syndi.rsi
+    sprite: _starcup/Clothing/Back/Satchels/captain_syndi.rsi

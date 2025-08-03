@@ -38,7 +38,7 @@
   id: CaptainGear
   equipment:
     #shoes: ClothingShoesBootsLaceup # - DeltaV - Commented out for loadout options
-    eyes: ClothingEyesGlassesSunglassesSyndie # starcup: command recolors
+    eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesCaptainSyndie # starcup: command recolors
     id: CaptainPDA
     ears: ClothingHeadsetAltCommandSyndie # starcup: command recolors
