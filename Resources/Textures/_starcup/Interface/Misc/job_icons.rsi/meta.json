@@ -8,28 +8,28 @@
     },
     "states": [
         {
-            "name": "Captain"
+            "name": "CaptainSyndi"
         },
         {
-            "name": "ChiefEngineer"
+            "name": "ChiefEngineerSyndi"
         },
         {
-            "name": "ChiefMedicalOfficer"
+            "name": "ChiefMedicalOfficerSyndi"
         },
         {
-            "name": "HeadOfPersonnel"
+            "name": "HeadOfPersonnelSyndi"
         },
         {
-            "name": "HeadOfSecurity"
+            "name": "HeadOfSecuritySyndi"
         },
         {
             "name": "Prisoner"
         },
         {
-            "name": "Quartermaster"
+            "name": "QuartermasterSyndi"
         },
         {
-            "name": "ResearchDirector"
+            "name": "ResearchDirectorSyndi"
         }
     ]
 }
