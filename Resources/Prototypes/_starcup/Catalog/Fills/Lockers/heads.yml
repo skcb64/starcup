@@ -7,8 +7,8 @@
     - id: CigarGoldCase
       prob: 0.25
     - id: ClothingBeltSheathFilled
-    - id: ClothingHeadsetAltCommandSyndie # starcup: command recolors
-    - id: ClothingOuterArmorCaptainCarapaceSyndie # starcup: command recolors
+    - id: ClothingHeadsetAltCommandSyndie
+    - id: ClothingOuterArmorCaptainCarapaceSyndie
     - id: CommsComputerCircuitboard
     - id: DoorRemoteCustom
     - id: MedalCase
@@ -16,15 +16,15 @@
     - id: PinpointerNuclear
     - id: PlushieNuke
       prob: 0.1
-    - id: RubberStampCaptainSyndie # starcup: command recolors
+    - id: RubberStampCaptainSyndie
     - id: SpaceCash1000
     - id: WeaponDisabler
-    - id: ClothingEyesGlassesCommandSyndie # starcup: command recolors
+    - id: ClothingEyesGlassesCommandSyndie
     - id: HeadSkeleton # A skull to accompany your skeleton crew
       conditions:
       - !type:PlayerCountCondition
         max: 15
-    - id: ClothingShoesBootsWinterCap # DeltaV
+    - id: ClothingShoesBootsWinterCapSyndie
 
 # No laser table + Laser table
 - type: entityTable

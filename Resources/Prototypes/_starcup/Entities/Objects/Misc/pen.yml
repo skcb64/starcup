@@ -16,6 +16,6 @@
   components:
   - type: Sprite
     sprite: _starcup/Objects/Misc/pens.rsi
-    state: pen_cap
+    state: pen_cap_syndi
   - type: Item
     sprite: _starcup/Objects/Misc/pens.rsi
