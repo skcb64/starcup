@@ -42,8 +42,8 @@
     - id: CigarGoldCase
       prob: 0.25
     - id: ClothingBeltSheathFilled
-    - id: ClothingHeadsetAltCommandSyndie # starcup: command recolors
-    - id: ClothingOuterArmorCaptainCarapace # starcup: command recolors
+    - id: ClothingHeadsetAltCommand
+    - id: ClothingOuterArmorCaptainCarapace
     - id: CommsComputerCircuitboard
     - id: DoorRemoteCustom
     - id: MedalCase
@@ -51,10 +51,10 @@
     - id: PinpointerNuclear
     - id: PlushieNuke
       prob: 0.1
-    - id: RubberStampCaptainSyndie # starcup: command recolors
+    - id: RubberStampCaptain
     - id: SpaceCash1000
     - id: WeaponDisabler
-    - id: ClothingEyesGlassesCommandSyndie # starcup: command recolors
+    - id: ClothingEyesGlassesCommand
     - id: HeadSkeleton # A skull to accompany your skeleton crew
       conditions:
       - !type:PlayerCountCondition
@@ -75,11 +75,9 @@
   id: FillCaptainHardsuit
   table: !type:AllSelector
     children:
-    # begin starcup: command recolors
-    - id: ClothingOuterHardsuitCapSyndie
-    - id: ClothingMaskGasCaptainSyndie
-    - id: JetpackCaptainFilledSyndie
-    # end starcup
+    - id: ClothingOuterHardsuitCap
+    - id: ClothingMaskGasCaptain
+    - id: JetpackCaptainFilled
     - id: OxygenTankFilled
 
 # No laser locker, used when the antique laser is placed in the special display crate
@@ -148,7 +146,7 @@
     - id: RubberStampDenied
     - id: RubberStampHop
     - id: WeaponDisabler
-    - id: ClothingEyesHudCommandSyndie # starcup: command recolors
+    - id: ClothingEyesHudCommand
     - id: ClothingShoesBootsWinterHeadOfPersonel # DeltaV
 
 - type: entity
