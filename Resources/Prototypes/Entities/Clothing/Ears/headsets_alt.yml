@@ -51,9 +51,9 @@
       key_slots:
       - EncryptionKeyStationMaster
   - type: Sprite
-    sprite: _starcup/Clothing/Ears/Headsets/command_syndi.rsi # starcup: command recolors
+    sprite: Clothing/Ears/Headsets/command.rsi
   - type: Clothing
-    sprite: _starcup/Clothing/Ears/Headsets/command_syndi.rsi # starcup: command recolors
+    sprite: Clothing/Ears/Headsets/command.rsi
 
 - type: entity
   parent: [ClothingHeadsetAlt, BaseCommandContraband]
