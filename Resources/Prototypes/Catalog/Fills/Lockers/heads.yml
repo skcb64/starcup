@@ -79,6 +79,7 @@
     - id: ClothingOuterHardsuitCapSyndie
     - id: ClothingMaskGasCaptainSyndie
     - id: JetpackCaptainFilledSyndie
+    # end starcup
     - id: OxygenTankFilled
 
 # No laser locker, used when the antique laser is placed in the special display crate
