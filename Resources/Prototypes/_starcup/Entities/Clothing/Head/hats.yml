@@ -1,4 +1,15 @@
 - type: entity
+  parent: ClothingHeadHatBeretCommand
+  id: ClothingHeadHatBeretCommandSyndie
+  description: A beret with the Syndicate logo. It has an aura of authority.
+  suffix: Syndicate
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret_command_syndi.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret_command_syndi.rsi
+
+- type: entity
   parent: ClothingHeadBase
   id: ClothingHeadSuitNeuroroboticist
   name: neuroroboticist helmet
