@@ -1,4 +1,14 @@
 - type: entity
+  parent: ClothingHeadHatCaptain
+  id: ClothingHeadHatCaptainSyndie
+  suffix: Syndicate
+  components:
+  - type: Sprite
+    sprite: _starcup/Clothing/Head/Hats/captain_syndi.rsi
+  - type: Clothing
+    sprite: _starcup/Clothing/Head/Hats/captain_syndi.rsi
+
+- type: entity
   parent: ClothingHeadHatBeretCommand
   id: ClothingHeadHatBeretCommandSyndie
   description: A beret with the Syndicate logo. It has an aura of authority.
@@ -56,3 +66,15 @@
     sprite: _starcup/Clothing/Head/Hats/pyjamananotrasenblue.rsi
   - type: Clothing
     sprite: _starcup/Clothing/Head/Hats/pyjamananotrasenblue.rsi
+
+- type: entity
+  parent: ClothingHeadHatCapcap
+  id: ClothingHeadHatCapcapSyndie
+  suffix: Syndicate
+  components:
+  - type: Sprite
+    sprite: _starcup/Clothing/Head/Hats/capcap_syndi.rsi
+  - type: Clothing
+    sprite: _starcup/Clothing/Head/Hats/capcap_syndi.rsi
+  - type: Item
+    sprite: _starcup/Clothing/Head/Hats/capcap_syndi.rsi
