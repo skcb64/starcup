@@ -47,7 +47,6 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
     [Dependency] private readonly SharedMapSystem _map = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly ITileDefinitionManager _tileDefMan = default!;
     [Dependency] private readonly AudioSystem _audio = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly ReactiveSystem _reactive = default!;
@@ -59,6 +58,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
     [Dependency] private readonly SpeedModifierContactsSystem _speedModContacts = default!;
     [Dependency] private readonly TileFrictionController _tile = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private readonly TurfSystem _turf = default!;
 
     [ValidatePrototypeId<ReagentPrototype>]
     private const string Blood = "Blood";
@@ -389,6 +389,8 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         // Ensure we actually have the component
         EnsureComp<TileFrictionModifierComponent>(entity);
 
+        EnsureComp<SlipperyComponent>(entity, out var slipComp);
+
         // This is the base amount of reagent needed before a puddle can be considered slippery. Is defined based on
         // the sprite threshold for a puddle larger than 5 pixels.
         var smallPuddleThreshold = FixedPoint2.New(entity.Comp.OverflowVolume.Float() * LowThreshold);
@@ -407,17 +409,21 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         var launchMult = FixedPoint2.Zero;
         // A cumulative weighted amount of stun times from slippery reagents
         var stunTimer = TimeSpan.Zero;
+        // A cumulative weighted amount of knockdown times from slippery reagents
+        var knockdownTimer = TimeSpan.Zero;
 
         // Check if the puddle is big enough to slip in to avoid doing unnecessary logic
         if (solution.Volume <= smallPuddleThreshold)
         {
             _stepTrigger.SetActive(entity, false, comp);
             _tile.SetModifier(entity, 1f);
+            slipComp.SlipData.SlipFriction = 1f;
+            slipComp.AffectsSliding = false;
+            Dirty(entity, slipComp);
             return;
         }
 
-        if (!TryComp<SlipperyComponent>(entity, out var slipComp))
-            return;
+        slipComp.AffectsSliding = true;
 
         foreach (var (reagent, quantity) in solution.Contents)
         {
@@ -437,7 +443,8 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
             // Aggregate launch speed based on quantity
             launchMult += reagentProto.SlipData.LaunchForwardsMultiplier * quantity;
             // Aggregate stun times based on quantity
-            stunTimer += reagentProto.SlipData.ParalyzeTime * (float)quantity;
+            stunTimer += reagentProto.SlipData.StunTime * (float)quantity;
+            knockdownTimer += reagentProto.SlipData.KnockdownTime * (float)quantity;
 
             if (reagentProto.SlipData.SuperSlippery)
                 superSlipperyUnits += quantity;
@@ -456,7 +463,8 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         if (slipperyUnits > 0)
         {
             slipComp.SlipData.LaunchForwardsMultiplier = (float)(launchMult/slipperyUnits);
-            slipComp.SlipData.ParalyzeTime = (stunTimer/(float)slipperyUnits);
+            slipComp.SlipData.StunTime = (stunTimer/(float)slipperyUnits);
+            slipComp.SlipData.KnockdownTime = (knockdownTimer/(float)slipperyUnits);
         }
 
         // Only make it super slippery if there is enough super slippery units for its own puddle
@@ -686,7 +694,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         }
 
         // If space return early, let that spill go out into the void
-        if (tileRef.Tile.IsEmpty || tileRef.IsSpace(_tileDefMan))
+        if (tileRef.Tile.IsEmpty || _turf.IsSpace(tileRef))
         {
             puddleUid = EntityUid.Invalid;
             return false;
@@ -741,7 +749,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         }
 
         var coords = _map.GridTileToLocal(gridId, mapGrid, tileRef.GridIndices);
-        puddleUid = EntityManager.SpawnEntity("Puddle", coords);
+        puddleUid = Spawn("Puddle", coords);
         EnsureComp<PuddleComponent>(puddleUid);
         if (TryAddSolution(puddleUid, solution, sound))
         {

@@ -36,8 +36,8 @@ using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
 // Begin CD - Character Records
 using System.Globalization;
-using Content.Client._CosmaticDrift.Records.UI;
-using Content.Shared._CosmaticDrift.Records;
+using Content.Client._CD.Records.UI;
+using Content.Shared._CD.Records;
 // End CD - Character Records
 
 namespace Content.Client.Lobby.UI
@@ -289,6 +289,7 @@ namespace Content.Client.Lobby.UI
             };
 
             RgbSkinColorContainer.AddChild(_rgbSkinColorSelector = new ColorSelectorSliders());
+            _rgbSkinColorSelector.SelectorType = ColorSelectorSliders.ColorSelectorType.Hsv; // defaults color selector to HSV
             _rgbSkinColorSelector.OnColorChanged += _ =>
             {
                 OnSkinColorOnValueChanged();
