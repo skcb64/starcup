@@ -4,6 +4,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 using Robust.Shared.Timing;
+using Content.Shared._starcup.CCVars;
 
 namespace Content.Shared.Movement.Components
 {
@@ -77,7 +78,11 @@ namespace Content.Shared.Movement.Components
 
         public const float LerpTime = 1.0f;
 
-        public bool Sprinting => (HeldMoveButtons & MoveButtons.Walk) == 0x0;
+        //public bool Sprinting => (HeldMoveButtons & MoveButtons.Walk) == 0x0;
+        // begin starcup changes
+        public bool DefaultSprinting = scCCVars.DefaultSprint;
+        public bool Sprinting => ((HeldMoveButtons & MoveButtons.Walk) != 0x0) ^ DefaultSprinting; // starcup: sprint default setting
+        // end starcup changes
 
         [ViewVariables(VVAccess.ReadWrite)]
         public bool CanMove = true;

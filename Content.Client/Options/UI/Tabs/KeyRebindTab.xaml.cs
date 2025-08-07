@@ -13,6 +13,7 @@ using Robust.Shared.Input;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using static Robust.Client.UserInterface.Controls.BoxContainer;
+using Content.Shared._starcup.CCVars; // starcup (duh) for default speed setting
 
 namespace Content.Client.Options.UI.Tabs
 {
@@ -97,6 +98,12 @@ namespace Content.Client.Options.UI.Tabs
             _deferCommands.Add(_inputManager.SaveToUserData);
         }
 
+        private void HandleDefaultSprint(BaseButton.ButtonToggledEventArgs args)
+        {
+            _cfg.SetCVar(scCCVars.DefaultSprint, args.Pressed);
+            _cfg.SaveToFile();
+        }
+
         private void HandleStaticStorageUI(BaseButton.ButtonToggledEventArgs args)
         {
             _cfg.SetCVar(CCVars.StaticStorageUI, args.Pressed);
@@ -162,6 +169,7 @@ namespace Content.Client.Options.UI.Tabs
             AddButton(EngineKeyFunctions.Walk);
             AddCheckBox("ui-options-hotkey-toggle-walk", _cfg.GetCVar(CCVars.ToggleWalk), HandleToggleWalk);
             InitToggleWalk();
+            AddCheckBox("ui-options-default-sprint", _cfg.GetCVar(scCCVars.DefaultSprint), HandleDefaultSprint);
             AddButton(ContentKeyFunctions.ToggleKnockdown);
 
             AddHeader("ui-options-header-camera");
