@@ -14,6 +14,7 @@ using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using static Robust.Client.UserInterface.Controls.BoxContainer;
 using Content.Shared._starcup.CCVars; // starcup (duh) for default speed setting
+using Content.Shared.Movement.Components;
 
 namespace Content.Client.Options.UI.Tabs
 {

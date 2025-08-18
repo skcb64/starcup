@@ -4,6 +4,8 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 using Robust.Shared.Timing;
+using Robust.Shared.Configuration; // starcup
+using Content.Shared._starcup.CCVars; // starcup (duh) for default speed setting
 
 namespace Content.Shared.Movement.Components
 {
@@ -28,6 +30,8 @@ namespace Content.Shared.Movement.Components
         // We change which vector we write into based on whether we were sprinting after the previous input.
         //   (well maybe we do but the code is designed such that MoverSystem applies movement speed)
         //   (and I'm not changing that)
+
+        [Dependency] private readonly IConfigurationManager _cfg = default!;
 
         public GameTick LastInputTick;
         public ushort LastInputSubTick;
@@ -80,13 +84,33 @@ namespace Content.Shared.Movement.Components
         /// begin starcup changes
         /// Makes it so movement speed / walk key behavior flips depending on if default move speed is sprint or walk.
         // public bool Sprinting => (HeldMoveButtons & MoveButtons.Walk) == 0x0;
-        public bool Sprinting => (HeldMoveButtons & MoveButtons.Walk) == SprintDefault;
+        public bool Sprinting => (HeldMoveButtons & MoveButtons.Walk) == DefaultSprintHandler.SprintDefault;
 
-        public MoveButtons SprintDefault = MoveButtons.Walk;
         /// end starcup changes
 
         [ViewVariables(VVAccess.ReadWrite)]
         public bool CanMove = true;
+    }
+
+    public sealed class DefaultSprintHandler : EntitySystem
+    {
+        [Dependency] private readonly IConfigurationManager _cfg = default!;
+
+        public override void Initialize()
+        {
+            base.Initialize();
+
+            Subs.CVar(_cfg, scCCVars.DefaultSprint, OnSprintingDefaultChanged);
+        }
+        public MoveButtons SprintDefault = MoveButtons.Walk;
+
+        private void OnSprintingDefaultChanged(bool enabled)
+        {
+            if (enabled)
+                SprintDefault = MoveButtons.None;
+            else
+                SprintDefault = MoveButtons.Walk;
+        }
     }
 
     [Serializable, NetSerializable]
