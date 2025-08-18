@@ -77,9 +77,9 @@ namespace Content.Shared.Movement.Components
 
         public const float LerpTime = 1.0f;
 
-        // public bool Sprinting => (HeldMoveButtons & MoveButtons.Walk) == 0x0;
         /// begin starcup changes
         /// Makes it so movement speed / walk key behavior flips depending on if default move speed is sprint or walk.
+        // public bool Sprinting => (HeldMoveButtons & MoveButtons.Walk) == 0x0;
         public bool Sprinting => (HeldMoveButtons & MoveButtons.Walk) == SprintDefault;
 
         public MoveButtons SprintDefault = MoveButtons.Walk;
