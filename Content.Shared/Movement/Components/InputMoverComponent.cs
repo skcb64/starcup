@@ -79,8 +79,10 @@ namespace Content.Shared.Movement.Components
 
         // public bool Sprinting => (HeldMoveButtons & MoveButtons.Walk) == 0x0;
         /// begin starcup changes
-        public bool DefaultSprinting = false;
-        public bool Sprinting => ((HeldMoveButtons & MoveButtons.Walk) != 0x0) ^ DefaultSprinting; // starcup: sprint default setting
+        /// Makes it so movement speed / walk key behavior flips depending on if default move speed is sprint or walk.
+        public bool Sprinting => (HeldMoveButtons & MoveButtons.Walk) == SprintDefault;
+
+        public MoveButtons SprintDefault = MoveButtons.Walk;
         /// end starcup changes
 
         [ViewVariables(VVAccess.ReadWrite)]
