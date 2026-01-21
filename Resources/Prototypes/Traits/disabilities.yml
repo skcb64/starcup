@@ -32,10 +32,20 @@
   name: trait-narcolepsy-name
   description: trait-narcolepsy-desc
   category: Disabilities
+  # begin starcup: exclude MKCs
+  blacklist:
+    components:
+      - Silicon
+      - BorgChassis
+  excludedSpecies:
+    - IPC
+  # end starcup
   components:
     - type: Narcolepsy
-      timeBetweenIncidents: 300, 600
-      durationOfIncident: 10, 30
+      maxTimeBetweenIncidents: 600
+      minTimeBetweenIncidents: 300
+      maxDurationOfIncident: 30
+      minDurationOfIncident: 10
 
 - type: trait
   id: Unrevivable
@@ -83,8 +93,20 @@
   name: trait-painnumbness-name
   description: trait-painnumbness-desc
   category: Disabilities
-  components:
-  - type: PainNumbness
+  specials:
+  - !type:ApplyStatusEffectSpecial
+    statusEffects:
+    - PainNumbnessTraitStatusEffect
+
+- type: trait
+  id: Hemophilia
+  name: trait-hemophilia-name
+  description: trait-hemophilia-desc
+  category: Disabilities
+  specials:
+  - !type:ApplyStatusEffectSpecial
+    statusEffects:
+    - StatusEffectHemophiliaTrait
 
 - type: trait
   id: ImpairedMobility

@@ -5,7 +5,7 @@
   prototype: MobHuman
   sprites: MobHumanSprites
   markingLimits: MobHumanMarkingLimits
-  dollPrototype: MobHumanDummy
+  dollPrototype: AppearanceHuman
   skinColoration: Hues # starcup
 
 # The lack of a layer means that
@@ -45,7 +45,7 @@
 #      points: 0
 #      required: false
     Hair:
-      points: 1
+      points: 2 # starcup 1<2
       required: false
     FacialHair:
       points: 1

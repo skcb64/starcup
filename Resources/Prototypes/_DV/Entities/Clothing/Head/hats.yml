@@ -32,3 +32,39 @@
   - type: Clothing
     sprite: _DV/Clothing/Head/Soft/couriersoft.rsi
     equippedPrefix: flipped
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretAtmospherics
+  name: atmospherics beret
+  description: Yellow beret that entices you to make canister bombs. Don't.
+  components:
+  - type: Sprite
+    sprite: _DV/Clothing/Head/Hats/beret_atmospherics.rsi
+  - type: Clothing
+    sprite: _DV/Clothing/Head/Hats/beret_atmospherics.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+    - HamsterWearable
+    - WhitelistChameleon
+
+# nyano
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetKendoMen
+  name: kendo helmet # starcup men->kendo helmet
+  description: The quintessential head armor of the kendo practitioner.
+  components:
+  - type: Sprite
+    sprite: _DV/Clothing/Head/Helmets/men.rsi
+  - type: Clothing
+    sprite: _DV/Clothing/Head/Helmets/men.rsi
+#  - type: Armor # starcup - just let it be a costume
+#    modifiers:
+#      coefficients:
+#        Blunt: 0.80
+#        Slash: 0.95
+#        Piercing: 0.95
+#end nyano

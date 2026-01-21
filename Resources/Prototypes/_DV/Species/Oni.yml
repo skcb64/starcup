@@ -3,7 +3,7 @@
   name: species-name-oni
   roundStart: true
   prototype: MobOni
-  dollPrototype: MobOniDummy
+  dollPrototype: AppearanceOni
   markingLimits: MobOniMarkingLimits
   sprites: MobHumanSprites
   skinColoration: Hues
@@ -19,7 +19,7 @@
   id: MobOniMarkingLimits
   points:
     Hair:
-      points: 1
+      points: 2 # starcup 1<2
       required: false
     FacialHair:
       points: 1

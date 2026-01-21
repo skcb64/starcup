@@ -6,7 +6,7 @@
   sprites: MobRodentiaSprites
   defaultSkinTone: "#747474"
   markingLimits: MobRodentiaMarkingLimits
-  dollPrototype: MobRodentiaDummy
+  dollPrototype: AppearanceRodentia
   skinColoration: Hues
   maleFirstNames: NamesRodentiaMale
   femaleFirstNames: NamesRodentiaFemale
@@ -46,7 +46,7 @@
   id: MobRodentiaMarkingLimits
   points:
     Hair:
-      points: 1
+      points: 2 # starcup 1<2
       required: false
     FacialHair:
       points: 1

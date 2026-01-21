@@ -6,7 +6,7 @@
   sprites: MobSlimeSprites
   defaultSkinTone: "#b8b8b8"
   markingLimits: MobSlimeMarkingLimits
-  dollPrototype: MobSlimePersonDummy
+  dollPrototype: AppearanceSlimePerson
   skinColoration: Hues
 # begin starcup: height adjustments
   baseScale: "1.05, 1.05"
@@ -23,7 +23,7 @@
     UndergarmentTop: MobHumanoidAnyMarking
     UndergarmentBottom: MobHumanoidAnyMarking
     Chest: MobSlimeTorso
-    Eyes: MobHumanoidEyes
+    Eyes: MobHumanoidAnyMarking #imp, so they can pick their eyes
     LArm: MobSlimeLArm
     RArm: MobSlimeRArm
     LHand: MobSlimeLHand
@@ -36,14 +36,18 @@
 - type: markingPoints
   id: MobSlimeMarkingLimits
   points:
-    Hair:
+    Eyes: #imp, so they can pick their eyes
       points: 1
+      required: true
+      defaultMarkings: [ SlimeEyesDefault ]
+    Hair:
+      points: 2 # starcup 1<2
       required: false
     FacialHair:
       points: 1
       required: false
     Chest:
-      points: 4 # imp 1<4
+      points: 4 # imp 2<4
       required: false
     Legs:
       points: 8 # imp 4<8
@@ -55,7 +59,7 @@
 - type: humanoidBaseSprite
   id: MobSlimeMarkingFollowSkin
   markingsMatchSkin: true
-  layerAlpha: 0.75 # imp 0.5<0.75
+  layerAlpha: 0.72
 
 - type: humanoidBaseSprite
   id: MobSlimeHead

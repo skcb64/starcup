@@ -6,7 +6,7 @@
   - type: EntityTableContainerFill
     containers:
       entity_storage: !type:NestedSelector
-        tableId: FillLockerBooze
+        tableId: FillLockerBartender # starcup: new fill
 
 - type: entityTable
   id: FillLockerBooze
@@ -17,7 +17,7 @@
     - id: DrinkShaker
     - id: ClothingEyesHudBeer
     - id: HandLabeler
-    - id: DrinkBottleBeer
+    - id: DrinkBeerBottleFull
       amount: !type:BinomialNumberSelector
         trials: 3
     - !type:AllSelector
@@ -45,7 +45,7 @@
   id: FillClosetChef
   table: !type:AllSelector
     children:
-    - id: MonkeyCubeBox # starcup: replaces VariantCubeBox, no non-sapient kobolds
+    - id: ChefCubeBox # starcup: replaces VariantCubeBox, no non-sapient kobolds and monkeys are not for food
     - id: SprayBottleWater
     - id: FoodBoxCloth
     - id: ReagentContainerSugar
@@ -91,9 +91,14 @@
       - id: BoxMousetrap
       - id: TrashBag
       - id: SoapNT
-      - id: FlashlightLantern
+      #- id: FlashlightLantern # starcup: replaced it with another one further down
       - id: Plunger
       - id: WireBrush
+      # begin starcup: add misc tools & tweaks
+      - id: BroomItem
+      - id: FlashlightLanternPurple
+      - id: FeatherDuster
+      # end starcup
 
 - type: entity
   id: ClosetLegalFilled
@@ -165,6 +170,12 @@
       prob: 0.5
     - id: NettleSeeds
       prob: 0.7
+    # begin starcup
+    - id: ChoppingAxe
+      prob: 0.3
+    - id: BrushAxe
+      prob: 0.2
+    # end starcup
 
 - type: entity
   id: ClosetJanitorBombFilled

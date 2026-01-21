@@ -1,4 +1,21 @@
 - type: entity
+  id: BorgModuleToolBasic
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  name: basic tool cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: generic
+    - state: icon-tools
+  - type: ItemBorgModule
+    hands:
+    - item: Crowbar
+    - item: Wrench
+    - item: Screwdriver
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: tool-module }
+
+- type: entity
   id: BaseBorgModuleNanotrasen
   parent: BaseBorgModule
   abstract: true
@@ -66,9 +83,9 @@
     - state: nanotrasen
     - state: icon-nanotrasen
   - type: ItemBorgModule
-    items:
-    - WeaponPistolEchis
-    - EnergyDaggerLoud
+    hands:
+    - item: WeaponPistolEchis
+    - item: EnergyDaggerLoud
   - type: BorgModuleIcon
     icon: { sprite: _starcup/Interface/Actions/actions_borg.rsi, state: nanotrasen-weapon-module }
   - type: Item
@@ -103,11 +120,11 @@
       - state: nanotrasen
       - state: icon-nanotrasen
     - type: ItemBorgModule
-      items:
-      - Crowbar
-      - EmagNT
-      - AccessBreakerNT
-      - PinpointerNanotrasenNuclear
+      hands:
+      - item: Crowbar
+      - item: EmagNT
+      - item: AccessBreakerNT
+      - item: PinpointerNanotrasenNuclear
     - type: BorgModuleIcon
       icon: { sprite: _starcup/Interface/Actions/actions_borg.rsi, state: nanotrasen-operative-module }
 
@@ -124,9 +141,9 @@
       - state: nanotrasen
       - state: icon-nanotrasen
     - type: ItemBorgModule
-      items:
-      - CyborgEnergySwordDoubleNT
-      - PinpointerNanotrasenNuclear
+      hands:
+      - item: CyborgEnergySword
+      - item: PinpointerNanotrasenNuclear
     - type: BorgModuleIcon
       icon: { sprite: _starcup/Interface/Actions/actions_borg.rsi, state: nanotrasen-esword-module }
 
@@ -143,9 +160,9 @@
       - state: nanotrasen
       - state: icon-nanotrasen
     - type: ItemBorgModule
-      items:
-        - WeaponLightMachineGunL6CNT
-        - PinpointerNanotrasenNuclear
+      hands:
+      - item: WeaponLightMachineGunL6CNT
+      - item: PinpointerNanotrasenNuclear
     - type: BorgModuleIcon
       icon: { sprite: _starcup/Interface/Actions/actions_borg.rsi, state: nanotrasen-l6c-module }
 
@@ -162,8 +179,8 @@
       - state: nanotrasenborgbomb
       - state: icon-bomb-nt
     - type: ItemBorgModule
-      items:
-        - SelfDestructSeq
+      hands:
+      - item: SelfDestructSeq
     - type: BorgModuleIcon
       icon: { sprite: _starcup/Interface/Actions/actions_borg.rsi, state: nanotrasen-martyr-module }
     - type: Item
