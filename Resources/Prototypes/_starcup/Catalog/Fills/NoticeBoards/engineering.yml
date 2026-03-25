@@ -5,6 +5,8 @@
   id: NoticeBoardFillEngineering
   table: !type:AllSelector
     children:
+    - id: PaperNoticeBoardMKC
+    - id: PaperNoticeBoardAtmosTritium
     - id: PaperNoticeBoardAtmosDeltaP
 
 - type: entity

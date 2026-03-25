@@ -82,6 +82,7 @@
     title: comms-console-announcement-title-station-ai
     color: "#5ed7aa"
   - type: ShowJobIcons
+  - type: ShowCrewIcons
   - type: DamagedSiliconAccent
     startPowerCorruptionAtCharIdx: 4
     maxPowerCorruptionAtCharIdx: 20
@@ -107,6 +108,7 @@
       enum.SiliconLawsUiKey.Key:
         type: SiliconLawBoundUserInterface
   - type: ShowJobIcons
+  - type: ShowCrewIcons
 
 # Ai
 - type: entity
@@ -658,7 +660,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellHigh
   - type: RandomMetadata
-    nameSegments: [NamesBorg]
+    nameSegments: [NamesBorgstarcup] # starcup
 
 - type: entity
   parent: PlayerEngineeringBorgDerelict
@@ -693,7 +695,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellHigh
   - type: RandomMetadata
-    nameSegments: [NamesBorg]
+    nameSegments: [NamesBorgstarcup] # starcup
 
 - type: entity
   parent: PlayerBorgDerelict
@@ -730,7 +732,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellHigh
   - type: RandomMetadata
-    nameSegments: [NamesBorg]
+    nameSegments: [NamesBorgstarcup] # starcup
 
 - type: entity
   parent: PlayerJanitorBorgDerelict
@@ -768,7 +770,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellHigh
   - type: RandomMetadata
-    nameSegments: [NamesBorg]
+    nameSegments: [NamesBorgstarcup] # starcup
 
 - type: entity
   parent: PlayerMedicalBorgDerelict
@@ -805,7 +807,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellHigh
   - type: RandomMetadata
-    nameSegments: [NamesBorg]
+    nameSegments: [NamesBorgstarcup] # starcup
 
 - type: entity
   parent: PlayerMiningBorgDerelict
@@ -841,7 +843,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellHyper
   - type: RandomMetadata
-    nameSegments: [NamesDeathCommando]
+    nameSegments: [NamesAssaultBorg] # starcup
 
 - type: entity
   parent: PlayerSyndicateAssaultBorgDerelict

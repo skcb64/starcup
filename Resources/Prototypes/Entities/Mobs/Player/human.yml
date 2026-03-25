@@ -7,12 +7,11 @@
   components:
   - type: RandomHumanoidAppearance
     randomizeName: false
-    hair: HairBald
   - type: Loadout
     prototypes: [SyndicateOperativeGearExtremelyBasic]
     roleLoadout: [ RoleSurvivalSyndicate ]
   - type: RandomMetadata
-    nameSegments: [NamesDeathCommando]
+    nameSegments: [NamesAssaultBorg] # starcup
   - type: NpcFactionMember
     factions:
     - Syndicate

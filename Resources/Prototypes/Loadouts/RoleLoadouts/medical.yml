@@ -35,7 +35,7 @@
   - SurvivalMedical
   - Accessibility # starcup
   - Trinkets
-  - ChiefMedicalOfficerJobTrinkets
+#  - ChiefMedicalOfficerJobTrinkets
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -44,7 +44,7 @@
   - GroupTankHarness
   - MedicalDoctorHead
   - MedicalMask
-  - MedicalDoctorNeck # DeltaV
+  - MedicalDoctorNeck # starcup
   - MedicalDoctorJumpsuit
   - MedicalBackpack
   - MedicalDoctorOuterClothing
@@ -54,24 +54,25 @@
   - SurvivalMedical
   - Accessibility # starcup
   - Trinkets
-  - MedicalDoctorJobTrinkets
+#  - MedicalDoctorJobTrinkets
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
   id: JobMedicalIntern
   groups:
   - GroupTankHarness
+  - MedicalInternHead # starcup
   - Scarfs # starcup
   - MedicalInternJumpsuit
   - MedicalBackpack
   - MedicalInternOuterClothing # starcup
   - MedicalShoes # starcup
   - Glasses
-  - MedicalInternPDADelta # DeltaV
+  - MedicalInternID # starcup
   - Accessibility # starcup
   - SurvivalMedical
   - Trinkets
-  - MedicalInternJobTrinkets
+#  - MedicalInternJobTrinkets
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -83,13 +84,13 @@
   - ChemistJumpsuit
   - ChemistBackpack
   - ChemistOuterClothing
-  - ChemistShoes # DeltaV, replaces MedicalShoes
+  - ChemistShoes # starcup, replaces MedicalShoes
   - Glasses
   - ChemistPDA # starcup
   - SurvivalMedical
   - Accessibility # starcup
   - Trinkets
-  - ChemistJobTrinkets
+#  - ChemistJobTrinkets
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -98,7 +99,7 @@
   - GroupTankHarness
   - ParamedicHead
   - MedicalMask
-  - MedicalDoctorNeck # DeltaV
+  - MedicalDoctorNeck # starcup
   - ParamedicJumpsuit
   - MedicalBackpack
   - ParamedicOuterClothing
@@ -107,5 +108,5 @@
   - SurvivalMedical
   - Accessibility # starcup
   - Trinkets
-  - ParamedicJobTrinkets
+#  - ParamedicJobTrinkets
   - GroupSpeciesBreathToolMedical

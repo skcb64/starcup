@@ -140,39 +140,6 @@
       - EncryptionKeyPrison
       - EncryptionKeySecurity
 
-# Loadouts
-- type: loadout
-  id: PrisonerJumpsuit
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitPrisoner
-
-- type: loadout
-  id: PrisonerJumpskirt
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtPrisoner
-
-- type: loadoutGroup
-  id: PrisonerJumpsuit
-  name: loadout-group-prisoner-jumpsuit
-  loadouts:
-    - PrisonerJumpsuit
-    - PrisonerJumpskirt
-
-- type: roleLoadout
-  id: JobPrisoner
-  groups:
-  - Scarfs
-  - PrisonerJumpsuit
-  - CommonBackpack
-  - PassengerShoes
-  - Glasses
-  - Accessibility
-  - Trinkets
-  - Plushies
-  - Survival
-  - GroupSpeciesBreathTool
-  - GroupTankHarness
-
 - type: chameleonOutfit
   id: PrisonerChameleonOutfit
   job: Prisoner
